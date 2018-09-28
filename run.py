@@ -3,23 +3,18 @@
 import os
 import sys
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
-# sys.path.append(os.path.dirname(os.getcwd()))
-# from multiprocessing import Process
-
-# from main.zdm_crawler import run_process as zdmCrawler
-# from selfpool.proxy_crawler import run_process as proxyCrawler
-# from selfpool.proxy_refresh import run_process as proxyRefresh
+sys.path.append(os.path.dirname(os.getcwd()))
+from solution.projectionArea import ProjectionArea
 
 
 class Run(object):
     def __init__(self):
-        # self.zdmCrawler = ZdmCrawler()
-        # self.proxyCrawler = ProxyCrawler()
-        # self.proxyRefresh = ProxyRefresh()
         pass
 
     def run_interface(self):
-        pass
+        obj = ProjectionArea()
+        res = obj.projectionArea([[2,2,2],[2,1,2],[2,2,2]])
+        print(res)
 
 
 if __name__ == '__main__':
