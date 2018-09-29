@@ -38,8 +38,15 @@ class ListNode:
 
 
 class Solution(object):
-    def __init__(self):
-        pass
+    def __init__(self, data):
+        self.head = ListNode(data[0])
+
+        p = self.head
+
+        for i in data[1:]:
+            node = ListNode(i)
+            p.next = node
+            p = p.next
 
     def middleNode(self, head):
         # Definition for singly-linked list.
@@ -64,6 +71,8 @@ class Solution(object):
             fast = fast.next.next
         return slow
 
+
+        
 
 # if __name__ == '__main__':
 #     run = Run()

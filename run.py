@@ -12,21 +12,11 @@ class Run(object):
         pass
 
     def run_interface(self):
-        self.initlist([1, 2, 3, 4, 5])
-        obj = middleNode.Solution()
-        res = obj.middleNode(self.head)
+        obj = middleNode.Solution([1, 2, 3, 4, 5])
+        res = obj.middleNode(obj.head)
         print(res.val)
 
-    def initlist(self, data):
-
-        self.head = middleNode.ListNode(data[0])
-
-        p = self.head
-
-        for i in data[1:]:
-            node = middleNode.ListNode(i)
-            p.next = node
-            p = p.next
+    
 
 
 if __name__ == '__main__':
