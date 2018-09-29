@@ -4,7 +4,7 @@ import os
 import sys
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 sys.path.append(os.path.dirname(os.getcwd()))
-from solution import middleNode
+from solution import isPalindrome
 
 
 class Run(object):
@@ -12,11 +12,9 @@ class Run(object):
         pass
 
     def run_interface(self):
-        obj = middleNode.Solution([1, 2, 3, 4, 5])
-        res = obj.middleNode(obj.head)
-        print(res.val)
-
-    
+        obj = isPalindrome.Solution()
+        res = obj.isPalindrome(121)
+        print(res)
 
 
 if __name__ == '__main__':
