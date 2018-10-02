@@ -4,7 +4,7 @@ import os
 import sys
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 sys.path.append(os.path.dirname(os.getcwd()))
-from solution import removeElement
+from solution import uncommonFromSentences
 
 
 class Run(object):
@@ -12,8 +12,8 @@ class Run(object):
         pass
 
     def run_interface(self):
-        obj = removeElement.Solution()
-        res = obj.removeElement([0, 1, 2, 2, 3, 0, 4, 2], 2)
+        obj = uncommonFromSentences.Solution()
+        res = obj.uncommonFromSentences("xfj vcahm vcahm frkqt oibcc jko oibcc frkqt ft tr", "lv ktx ktx tr x xfj xfj frkqt ktx ta tr yynk vcahm")
         print(res)
 
 
