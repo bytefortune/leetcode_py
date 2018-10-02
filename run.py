@@ -4,7 +4,7 @@ import os
 import sys
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 sys.path.append(os.path.dirname(os.getcwd()))
-from solution import isPalindrome
+from solution import leafSimilar
 
 
 class Run(object):
@@ -12,8 +12,10 @@ class Run(object):
         pass
 
     def run_interface(self):
-        obj = isPalindrome.Solution()
-        res = obj.isPalindrome(121)
+        obj = leafSimilar.Solution(
+            [3, 5, 1, 6, 2, 9, 8, None, None, 7, 4],
+            [3, 5, 1, 6, 7, 4, 2, None, None, None, None, None, None, 9, 8])
+        res = obj.leafSimilar(obj.node_list1[0], obj.node_list2[0])
         print(res)
 
 
