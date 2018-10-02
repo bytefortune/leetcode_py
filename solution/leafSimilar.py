@@ -29,13 +29,8 @@ class TreeNode:
 
 class Solution:
     def __init__(self, data1, data2):
-        pass
-        # self.root = TreeNode(data[0])
         self.node_list1 = self.initTree(data1)
         self.node_list2 = self.initTree(data2)
-        # for i in range((len(data) - 2) / 2):
-
-        #     p = p.left
 
     def initTree(self, data):
         node_list = []
